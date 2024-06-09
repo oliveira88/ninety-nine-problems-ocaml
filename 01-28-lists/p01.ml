@@ -1,5 +1,6 @@
-let rec last (xs: 'a list): 'a option =
+let rec last (xs : 'a list) : 'a option =
   match xs with
   | [] -> None
-  | [x] -> Some x
+  | [ x ] -> Some x
   | _ :: tl -> last tl
+;;
